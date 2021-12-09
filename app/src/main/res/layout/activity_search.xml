@@ -17,7 +17,7 @@
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
             app:popupTheme="@style/Theme.Where2EatKotlinApp.PopupOverlay"
-            app:title="Restaurnats near you:" />
+            app:title="Restaurants near you:" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
