@@ -93,7 +93,7 @@ class SearchActivity : AppCompatActivity() {
                 "&type=restaurant" +
                 "&maxprice=$priceVal" +
                 "&opennow=true" +
-                "&key=YOUR_API_KEY" //TODO Fix having api key hardcoded
+                "&key=AIzaSyACUw41-AP0u0KF9hf2wFNBMMRoPeV9eIk" //TODO Fix having api key hardcoded
 
         adapter = RestaurantAdapter()
         val layoutMgr = LinearLayoutManager(this)
