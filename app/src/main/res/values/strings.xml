@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Where2Eat</string>
+    <string name="title_activity_search_screen">SearchScreenActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="title_activity_search">SearchActivity</string>
+
+    <string-array name="priceArray">
+        <item>$</item>
+        <item>$$</item>
+        <item>$$$</item>
+        <item>$$$$</item>
+        <item>$$$$$</item>
+    </string-array>
+
+    <string-array name="distanceArray">
+        <item>.25 km</item>
+        <item>.5 km</item>
+        <item>.75 km</item>
+        <item>1 km</item>
+        <item>1.25 km</item>
+        <item>1.5 km</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="key">AIzaSyACUw41-AP0u0KF9hf2wFNBMMRoPeV9eIk</string>
+</resources>
