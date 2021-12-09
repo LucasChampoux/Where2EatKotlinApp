@@ -43,6 +43,8 @@ class MainActivity : AppCompatActivity() {
         val priceSpinner : Spinner = findViewById(R.id.priceSpinner)
         val distanceSpinner : Spinner = findViewById(R.id.distanceSpinner)
         val searchButton : Button = findViewById(R.id.searchButton)
+        val latText : TextView = findViewById(R.id.latitude)
+        val longText : TextView = findViewById(R.id.longitude)
 
         //get values from previous search
         if(intent.hasExtra("priceFilter")){
@@ -53,8 +55,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         //Location for testing
-        currentLat = "42.963588"
-        currentLong = "-85.672753"
+//        currentLat = "42.963588"
+//        currentLong = "-85.672753"
 
         //add values to spinner
         val priceAdapter = ArrayAdapter.createFromResource(this, R.array.priceArray, R.layout.support_simple_spinner_dropdown_item)
@@ -87,6 +89,8 @@ class MainActivity : AppCompatActivity() {
         searchButton.setOnClickListener { view ->
 
             val intent = Intent(this@MainActivity, SearchActivity::class.java)
+            currentLat = latText.text.toString()
+            currentLong = longText.text.toString()
             intent.putExtra("priceFilter", priceFilter)
             intent.putExtra("distanceFilter", distanceFilter)
             intent.putExtra("currentLat", currentLat)

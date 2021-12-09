@@ -17,7 +17,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.android.volley.Request
 import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
-import com.example.where2eatkotlinapp.databinding.ActivitySearchBinding
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import org.json.JSONArray
 import org.json.JSONObject
@@ -93,7 +92,7 @@ class SearchActivity : AppCompatActivity() {
                 "&type=restaurant" +
                 "&maxprice=$priceVal" +
                 "&opennow=true" +
-                "&key=[YOUR_API_KEY]" //TODO Fix having api key hardcoded
+                "&key=[YOUR_API_KEY]"
 
         adapter = RestaurantAdapter()
         val layoutMgr = LinearLayoutManager(this)
