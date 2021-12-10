@@ -95,7 +95,8 @@ val jsonObjectRequest = JsonObjectRequest(
             { error ->
                 //Logic for error message handling
             })
-```         
+```  
+
 >Do note that because this works asyncrounously. You need to include any work with the data inside the lambda function so that data can be parsed when it is received.
 
 ### Step 3
